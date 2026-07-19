@@ -206,3 +206,28 @@ body::before{
     backdrop-filter:blur(4px);
     z-index:-1;
 }
+.logo img{
+    width:180px;
+    height:auto;
+}
+
+body{
+    background:#0b1120;
+    background-image:url("logo.png");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:700px;
+    background-attachment:fixed;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(11,17,32,0.88);
+    backdrop-filter:blur(6px);
+    z-index:-1;
+}
