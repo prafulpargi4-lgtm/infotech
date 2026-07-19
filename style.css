@@ -155,3 +155,32 @@ footer{
         font-size:17px;
     }
 }
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.card{
+    background:#1e293b;
+    border:1px solid rgba(0,229,255,.2);
+    border-radius:15px;
+    padding:30px;
+    transition:.3s;
+    text-align:center;
+}
+
+.card h3{
+    color:#00e5ff;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#d1d5db;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 30px rgba(0,229,255,.3);
+}
