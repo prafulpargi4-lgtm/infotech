@@ -184,3 +184,25 @@ footer{
     transform:translateY(-10px);
     box-shadow:0 10px 30px rgba(0,229,255,.3);
 }
+.logo img{
+    width:180px;
+    height:auto;
+}
+
+body{
+    background:#0b1120;
+    background-image:url("logo.png");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:550px;
+    background-attachment:fixed;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:rgba(11,17,32,0.90);
+    backdrop-filter:blur(4px);
+    z-index:-1;
+}
