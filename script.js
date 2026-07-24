@@ -1,9 +1,9 @@
-// ================= MENU =================
+// ================= MOBILE MENU =================
 
 const menuBtn = document.querySelector(".menu-btn");
 const navLinks = document.querySelector(".nav-links");
 
-if (menuBtn) {
+if (menuBtn && navLinks) {
     menuBtn.addEventListener("click", () => {
         navLinks.classList.toggle("active");
     });
@@ -17,6 +17,8 @@ topBtn.className = "top-btn";
 
 document.body.appendChild(topBtn);
 
+topBtn.style.display = "none";
+
 window.addEventListener("scroll", () => {
 
     if (window.scrollY > 300) {
@@ -27,36 +29,29 @@ window.addEventListener("scroll", () => {
 
 });
 
-topBtn.onclick = () => {
+topBtn.addEventListener("click", () => {
 
     window.scrollTo({
-        top:0,
-        behavior:"smooth"
+        top: 0,
+        behavior: "smooth"
     });
 
-};
+});
 
 // ================= SCROLL ANIMATION =================
 
-const observer = new IntersectionObserver((entries)=>{
+const observer = new IntersectionObserver((entries) => {
 
-entries.forEach(entry=>{
+    entries.forEach((entry) => {
 
-if(entry.isIntersecting){
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+        }
 
-entry.target.classList.add("show");
-
-}
-
-});
+    });
 
 });
 
-document.querySelectorAll(".service-card,.project-card,.about-text,.hero-text")
-.forEach(el=>observer.observe(el));
-const menuBtn = document.querySelector(".menu-btn");
-const navLinks = document.querySelector(".nav-links");
-
-menuBtn.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-});
+document.querySelectorAll(
+    ".hero-text, .about-text, .service-card, .project-card, .contact-container"
+).forEach((el) => observer.observe(el));
