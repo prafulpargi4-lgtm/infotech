@@ -579,3 +579,24 @@ transform:translateY(0);
     }
 
 }
+.hero-text h1 span{
+    background:linear-gradient(90deg,#00e5ff,#ffffff);
+    background-clip:text;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+
+.hero-image img{
+    animation: float 3s ease-in-out infinite;
+}
+
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-15px);
+    }
+}
