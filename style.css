@@ -600,3 +600,68 @@ transform:translateY(0);
         transform:translateY(-15px);
     }
 }
+/* ==========================
+   MOBILE RESPONSIVE HEADER
+========================== */
+
+.menu-btn{
+    display:none;
+    font-size:28px;
+    color:#00e5ff;
+    cursor:pointer;
+}
+
+@media (max-width:768px){
+
+.header .container{
+    width:90%;
+}
+
+.nav-links{
+    position:absolute;
+    top:80px;
+    left:-100%;
+    width:100%;
+    background:#07111f;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    transition:.4s;
+    padding:20px 0;
+}
+
+.nav-links.active{
+    left:0;
+}
+
+.nav-links li{
+    margin:15px 0;
+}
+
+.menu-btn{
+    display:block;
+}
+
+.hero-content,
+.about-container,
+.contact-container{
+    flex-direction:column;
+}
+
+.hero-text,
+.about-text{
+    text-align:center;
+}
+
+.hero-image img,
+.about-image img{
+    width:100%;
+    max-width:350px;
+}
+
+.services-grid,
+.projects-grid{
+    grid-template-columns:1fr;
+}
+
+}
