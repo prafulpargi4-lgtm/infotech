@@ -28,6 +28,19 @@ body{
     font-size:28px;
     font-weight:700;
     text-decoration:none;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo img{
+    width:45px;
+    height:45px;
+    object-fit:contain;
+}
+
+.logo span{
+    color:#00e5ff;
 }
 
 .nav-links{
