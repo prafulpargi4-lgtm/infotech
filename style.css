@@ -10,6 +10,10 @@ body{
 }
 
 .header{
+    .header{
+    background:rgba(10,10,20,0.8);
+    backdrop-filter:blur(10px);
+}
     background:#000;
     padding:20px 0;
 }
@@ -34,20 +38,24 @@ body{
 }
 
 .logo img{
-    width:45px;
-    height:45px;
+    .logo img{
+    filter: drop-shadow(0 0 8px #00e5ff);
+}
+    width:40px;
+    height:40px;
     object-fit:contain;
 }
 
-.logo span{
-    color:#00e5ff;
+  .logo span{
+    background:linear-gradient(90deg,#00e5ff,#ffffff);
+    background-clip:text;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    font-size:26px;
+    font-weight:700;
+    letter-spacing:1px;
 }
-.logo img{
-    width:60px;
-    height:60px;
-    display:block;
-    object-fit:contain;
-}
+
 .nav-links{
     display:flex;
     list-style:none;
