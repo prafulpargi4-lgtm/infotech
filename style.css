@@ -451,6 +451,7 @@ footer{
 .footer-logo h2{
     font-size:32px;
     background:linear-gradient(90deg,#00e5ff,#fff);
+    background-clip:text;
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
 }
