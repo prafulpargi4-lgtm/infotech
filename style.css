@@ -106,7 +106,6 @@ a{
     font-size:30px;
     cursor:pointer;
 }
-
 /* ===========================
    HERO
 =========================== */
@@ -151,6 +150,7 @@ a{
 }
 
 .btn{
+    display:inline-block;
     padding:14px 30px;
     border-radius:50px;
     font-weight:600;
@@ -164,6 +164,7 @@ a{
 
 .btn-primary:hover{
     transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,229,255,.35);
 }
 
 .btn-outline{
@@ -445,23 +446,13 @@ footer{
 .footer-logo img{
     width:50px;
     height:50px;
-    object-fit:contain;
-    filter:drop-shadow(0 0 10px #00e5ff);
 }
 
 .footer-logo h2{
     font-size:32px;
-    font-weight:700;
-    background:linear-gradient(90deg,#00e5ff,#ffffff);
+    background:linear-gradient(90deg,#00e5ff,#fff);
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent;
-    background-clip:text;
-}
-
-.footer-container p{
-    color:#cfcfcf;
-    line-height:1.8;
-    max-width:700px;
 }
 
 .social-icons{
@@ -478,19 +469,15 @@ footer{
     align-items:center;
     background:#00e5ff;
     color:#000;
-    font-size:22px;
     transition:.3s;
 }
 
 .social-icons a:hover{
-    transform:translateY(-6px) scale(1.08);
-    box-shadow:0 10px 25px rgba(0,229,255,.35);
+    transform:translateY(-6px);
 }
 
 .copyright{
-    margin-top:10px;
-    font-size:15px;
-    color:#888;
+    color:#999;
 }
 
 /* ===========================
@@ -501,135 +488,73 @@ footer{
 .call-btn,
 .top-btn{
     position:fixed;
-    left:25px;
     width:58px;
     height:58px;
     border-radius:50%;
     display:flex;
     justify-content:center;
     align-items:center;
-    color:#fff;
     font-size:24px;
-    text-decoration:none;
     z-index:999;
-    transition:.3s;
-    box-shadow:0 10px 25px rgba(0,0,0,.3);
 }
 
 .whatsapp{
-    bottom:25px;
+    left:20px;
+    bottom:20px;
     background:#25D366;
+    color:#fff;
 }
 
 .call-btn{
-    bottom:95px;
+    left:20px;
+    bottom:90px;
     background:#0d6efd;
+    color:#fff;
 }
 
 .top-btn{
-    right:25px;
-    left:auto;
-    bottom:25px;
+    right:20px;
+    bottom:20px;
     background:#00e5ff;
     color:#000;
-    border:none;
-    cursor:pointer;
-    display:none;
 }
 
-.whatsapp:hover,
-.call-btn:hover,
-.top-btn:hover{
-    transform:scale(1.1);
-}
 /* ===========================
-   MOBILE RESPONSIVE
+   MOBILE
 =========================== */
 
-@media (max-width:768px){
+@media(max-width:768px){
 
-    .header .container{
-        display:flex;
-        justify-content:space-between;
-        align-items:center;
-    }
+.hero-content,
+.about-container,
+.contact-container{
+grid-template-columns:1fr;
+text-align:center;
+}
 
-    .menu-btn{
-        display:block;
-        font-size:30px;
-        color:#00e5ff;
-        cursor:pointer;
-    }
+.hero-text h1{
+font-size:40px;
+}
 
-    .nav-links{
-        position:absolute;
-        top:80px;
-        left:-100%;
-        width:100%;
-        background:#071d49;
-        flex-direction:column;
-        text-align:center;
-        padding:25px 0;
-        gap:20px;
-        transition:.4s;
-        box-shadow:0 10px 25px rgba(0,0,0,.3);
-    }
+.nav-links{
+position:absolute;
+top:80px;
+left:-100%;
+width:100%;
+background:#071d49;
+flex-direction:column;
+padding:30px;
+transition:.4s;
+}
 
-    .nav-links.active{
-        left:0;
-    }
+.nav-links.active{
+left:0;
+}
 
-    .hero-content,
-    .about-container,
-    .contact-container{
-        grid-template-columns:1fr;
-        text-align:center;
-    }
+.menu-btn{
+display:block;
+}
 
-    .hero-text h1{
-        font-size:42px;
-    }
-
-    .about-text h2,
-    .section-heading h2{
-        font-size:34px;
-    }
-
-    .hero-btns{
-        justify-content:center;
-        flex-wrap:wrap;
-    }
-
-    .hero-image img,
-    .about-image img{
-        max-width:350px;
-        margin:auto;
-    }
-
-    .services-grid,
-    .projects-grid{
-        grid-template-columns:1fr;
-    }
-
-    .footer-logo{
-        flex-direction:column;
-    }
-
-    .footer-logo h2{
-        font-size:26px;
-    }
-
-    .whatsapp,
-    .call-btn,
-    .top-btn{
-        width:50px;
-        height:50px;
-        font-size:20px;
-    }
-
-    .call-btn{
-        bottom:85px;
-    }
 }
 
 /* ===========================
@@ -642,33 +567,29 @@ footer{
 .project-card,
 .contact-info,
 .contact-form{
-    opacity:0;
-    transform:translateY(40px);
-    transition:all .8s ease;
+opacity:0;
+transform:translateY(40px);
+transition:.8s;
 }
 
 .show{
-    opacity:1;
-    transform:translateY(0);
+opacity:1;
+transform:translateY(0);
 }
 
 /* ===========================
-   CUSTOM SCROLLBAR
+   SCROLLBAR
 =========================== */
 
 ::-webkit-scrollbar{
-    width:10px;
-}
-
-::-webkit-scrollbar-track{
-    background:#08162f;
+width:10px;
 }
 
 ::-webkit-scrollbar-thumb{
-    background:#00e5ff;
-    border-radius:20px;
+background:#00e5ff;
+border-radius:20px;
 }
-
-::-webkit-scrollbar-thumb:hover{
-    background:#00b8d4;
+.nav-links a.active{
+    color:#00e5ff;
+    font-weight:600;
 }
