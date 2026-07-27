@@ -47,3 +47,50 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll(
 ".hero-text, .about-text, .service-card, .project-card, .contact-container"
 ).forEach((el) => observer.observe(el));
+// ================= STATS COUNTER =================
+
+const counters = document.querySelectorAll(".stat-box h2");
+
+const counterObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+
+            const counter = entry.target;
+            const targetText = counter.innerText;
+
+            if (targetText.includes("+")) {
+
+                const target = parseInt(targetText);
+
+                let count = 0;
+
+                const updateCounter = () => {
+
+                    const increment = Math.ceil(target / 80);
+
+                    count += increment;
+
+                    if (count >= target) {
+                        counter.innerText = target + "+";
+                    } else {
+                        counter.innerText = count + "+";
+                        requestAnimationFrame(updateCounter);
+                    }
+
+                };
+
+                updateCounter();
+
+            }
+
+            counterObserver.unobserve(counter);
+
+        }
+
+    });
+
+});
+
+counters.forEach(counter => counterObserver.observe(counter));
