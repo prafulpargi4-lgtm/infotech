@@ -1,561 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XX8SQ8YJXT"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-XX8SQ8YJXT');
-    </script>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>INFOTECH | Premium IT Solutions</title>
-
-    <meta name="description"
-        content="Professional Website Development, Software Development, Mobile Apps & Digital Marketing Services.">
-
-    <meta name="keywords"
-        content="Website Development, Software, App Development, SEO, Digital Marketing">
-
-    <meta name="author" content="INFOTECH">
-
-    <link rel="icon" href="assets/logo.png" type="image/png">
-
-    <link rel="stylesheet" href="style.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="INFOTECH builds high-performing websites, software and digital experiences for growing businesses." />
+  <title>INFOTECH | Digital Solutions for Ambitious Businesses</title>
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XX8SQ8YJXT"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XX8SQ8YJXT');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-
-<!-- ================= HEADER ================= -->
-
-<header class="header">
-
-    <div class="container">
-
-        <a href="#home" class="logo">
-            <img src="assets/logo.png" alt="INFOTECH">
-            <span>INFOTECH</span>
-        </a>
-
-        <nav>
-
-            <ul class="nav-links">
-
-                <li><a href="#home">Home</a></li>
-
-                <li><a href="#about">About</a></li>
-
-                <li><a href="#services">Services</a></li>
-
-                <li><a href="#projects">Projects</a></li>
-
-                <li><a href="#contact">Contact</a></li>
-
-            </ul>
-
-        </nav>
-
-        <div class="menu-btn">
-            <i class="fas fa-bars"></i>
-        </div>
-
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="INFOTECH home"><span class="brand-mark">i</span><span>INFOTECH</span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a class="active" href="#top">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#work">Work</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+        <a class="nav-cta" href="#contact">Start a project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </nav>
     </div>
+  </header>
 
-</header>
-<!-- ================= HERO ================= -->
-
-<section class="hero" id="home">
-
-    <div class="container hero-content">
-
-        <div class="hero-text">
-
-            <h4>WELCOME TO INFOTECH</h4>
-
-            <h1>
-                We Build
-                <span>Modern Digital Solutions</span>
-                For Your Business
-            </h1>
-
-            <p>
-                We design high-quality websites, business software, mobile apps,
-                SEO strategies, and digital marketing solutions that help your
-                business grow faster.
-            </p>
-
-            <div class="hero-btns">
-
-                <a href="#contact" class="btn btn-primary">
-                    Get Started
-                </a>
-
-                <a href="#projects" class="btn btn-outline">
-                    View Portfolio
-                </a>
-
-            </div>
-
-            <div class="hero-stats">
-
-                <div class="stat-box">
-                    <h2>150+</h2>
-                    <span>Projects</span>
-                </div>
-
-                <div class="stat-box">
-                    <h2>100+</h2>
-                    <span>Happy Clients</span>
-                </div>
-
-                <div class="stat-box">
-                    <h2>5+</h2>
-                    <span>Years Experience</span>
-                </div>
-
-            </div>
-
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Digital partner for growing businesses</p>
+          <h1>Build a digital presence people <em>trust.</em></h1>
+          <p class="hero-description">We combine thoughtful strategy, polished design and dependable technology to help your business move forward with confidence.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#contact">Let's talk <i class="fa-solid fa-arrow-right"></i></a><a class="text-link" href="#work">Explore our work <i class="fa-solid fa-arrow-down"></i></a></div>
+          <div class="proof"><div class="avatar-stack"><span>R</span><span>P</span><span>A</span><span>+</span></div><p><strong>100+ businesses</strong><br />trusted us with their next move.</p></div>
         </div>
-
-        <div class="hero-image">
-
-            <img src="assets/hero.png" alt="INFOTECH">
-
+        <div class="hero-visual" aria-label="Product design preview">
+          <div class="glow"></div><div class="float-card card-one"><i class="fa-solid fa-chart-line"></i><span>Growth</span><strong>+48.2%</strong></div>
+          <div class="browser"><div class="browser-top"><span></span><span></span><span></span><div></div></div><div class="screen"><div class="screen-nav"><b>north.</b><small>Overview &nbsp; Services &nbsp; Contact</small></div><div class="screen-body"><p>MAKE YOUR<br /><strong>MOVE COUNT.</strong></p><div class="screen-orb"></div><div class="mini-chart"><i class="fa-solid fa-arrow-trend-up"></i><span>Performance<br /><b>82.4%</b></span></div></div></div></div>
+          <div class="float-card card-two"><div class="check"><i class="fa-solid fa-check"></i></div><span>Project status</span><strong>On track</strong></div>
         </div>
-
-    </div>
-
-</section>
-<!-- ================= ABOUT ================= -->
-
-<section class="about" id="about">
-
-    <div class="container about-container">
-
-        <div class="about-image">
-
-            <img src="assets/about.png" alt="About INFOTECH">
-
-        </div>
-
-        <div class="about-text">
-
-            <h4>ABOUT US</h4>
-
-            <h2>
-                We Create Powerful Digital
-                Solutions For Modern Businesses
-            </h2>
-
-            <p>
-                INFOTECH is a professional IT company based in Indore, India.
-                We specialize in Website Development, Software Development,
-                Mobile Applications, UI/UX Design, Branding and Digital
-                Marketing services.
-            </p>
-
-            <p>
-                Our mission is to help startups, small businesses and
-                enterprises build a strong online presence using modern
-                technologies, creative design and innovative strategies.
-            </p>
-
-            <div class="about-features">
-
-                <div class="feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>Professional Website Development</span>
-                </div>
-
-                <div class="feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>Custom Software Solutions</span>
-                </div>
-
-                <div class="feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>SEO & Digital Marketing</span>
-                </div>
-
-                <div class="feature">
-                    <i class="fas fa-check-circle"></i>
-                    <span>24×7 Customer Support</span>
-                </div>
-
-            </div>
-
-            <a href="#contact" class="btn btn-primary">
-                Learn More
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-<!-- PROJECTS -->
-
-<section class="projects" id="projects">
-
-    <div class="container">
-
-        <div class="section-heading">
-            <h4>Our Portfolio</h4>
-            <h2>Recent Projects</h2>
-            <p>Some of our latest successful projects.</p>
-        </div>
-
-        <div class="projects-grid">
-
-            <div class="project-card">
-                <img src="assets/project1.png" alt="Business Website">
-
-                <div class="project-info">
-                    <h3>Business Website</h3>
-                    <p>Modern corporate website for business growth.</p>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="assets/project2.png" alt="E-Commerce Website">
-
-                <div class="project-info">
-                    <h3>E-Commerce Store</h3>
-                    <p>Complete online shopping platform.</p>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="assets/project3.png" alt="Portfolio Website">
-
-                <div class="project-info">
-                    <h3>Portfolio Website</h3>
-                    <p>Creative portfolio for professionals.</p>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-<!-- STATS SECTION -->
-
-<section class="stats">
-
-    <div class="container stats-container">
-
-        <div class="stat-box">
-            <h2>150+</h2>
-            <p>Projects Completed</p>
-        </div>
-
-        <div class="stat-box">
-            <h2>100+</h2>
-            <p>Happy Clients</p>
-        </div>
-
-        <div class="stat-box">
-            <h2>5+</h2>
-            <p>Years Experience</p>
-        </div>
-
-        <div class="stat-box">
-            <h2>24/7</h2>
-            <p>Customer Support</p>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- TESTIMONIALS -->
-
-<section class="testimonials">
-
-    <div class="container">
-
-        <div class="section-heading">
-            <h4>Testimonials</h4>
-            <h2>What Our Clients Say</h2>
-            <p>Trusted by businesses across India.</p>
-        </div>
-
-        <div class="testimonial-grid">
-
-            <div class="testimonial-card">
-                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client">
-                <h3>Rahul Sharma</h3>
-                <span>Business Owner</span>
-
-                <div class="stars">
-                    ★★★★★
-                </div>
-
-                <p>
-                    Excellent website design and fast delivery.
-                    Highly professional service.
-                </p>
-            </div>
-
-            <div class="testimonial-card">
-                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Client">
-                <h3>Priya Verma</h3>
-                <span>Startup Founder</span>
-
-                <div class="stars">
-                    ★★★★★
-                </div>
-
-                <p>
-                    Our business grew after launching the new website.
-                    Great support team.
-                </p>
-            </div>
-
-            <div class="testimonial-card">
-                <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="Client">
-                <h3>Amit Patel</h3>
-                <span>E-Commerce Owner</span>
-
-                <div class="stars">
-                    ★★★★★
-                </div>
-
-                <p>
-                    Beautiful UI, responsive design and amazing quality.
-                    Highly recommended.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- PRICING -->
-
-<section class="pricing">
-
-    <div class="container">
-
-        <div class="section-heading">
-            <h4>Pricing</h4>
-            <h2>Choose Your Plan</h2>
-            <p>Affordable packages for every business.</p>
-        </div>
-
-        <div class="pricing-grid">
-
-            <!-- Basic -->
-
-            <div class="price-card">
-
-                <h3>Basic</h3>
-
-                <div class="price">₹14,999</div>
-
-                <ul>
-                    <li>✔ Responsive Website</li>
-                    <li>✔ 5 Pages</li>
-                    <li>✔ Contact Form</li>
-                    <li>✔ Free SSL</li>
-                    <li>✔ Basic SEO</li>
-                </ul>
-
-                <a href="#contact" class="btn btn-outline">
-                    Get Started
-                </a>
-
-            </div>
-
-            <!-- Business -->
-
-            <div class="price-card featured">
-
-                <span class="badge">Most Popular</span>
-
-                <h3>Business</h3>
-
-                <div class="price">₹24,999</div>
-
-                <ul>
-                    <li>✔ 10+ Pages</li>
-                    <li>✔ Admin Panel</li>
-                    <li>✔ Google Maps</li>
-                    <li>✔ Advanced SEO</li>
-                    <li>✔ 1 Year Support</li>
-                </ul>
-
-                <a href="#contact" class="btn btn-primary">
-                    Choose Plan
-                </a>
-
-            </div>
-
-            <!-- Premium -->
-
-            <div class="price-card">
-
-                <h3>Premium</h3>
-
-                <div class="price">₹39,999</div>
-
-                <ul>
-                    <li>✔ Custom Website</li>
-                    <li>✔ E-Commerce Store</li>
-                    <li>✔ Payment Gateway</li>
-                    <li>✔ Premium UI/UX</li>
-                    <li>✔ Lifetime Support</li>
-                </ul>
-
-                <a href="#contact" class="btn btn-outline">
-                    Contact Us
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- CONTACT -->
-
-<section class="contact" id="contact">
-
-    <div class="container">
-
-        <div class="section-heading">
-            <h4>Contact Us</h4>
-            <h2>Let's Work Together</h2>
-            <p>Have a project in mind? Contact us today.</p>
-        </div>
-
-        <div class="contact-container">
-
-            <div class="contact-info">
-
-                <div class="info-box">
-                    <i class="fas fa-phone"></i>
-                    <div>
-                        <h3>Phone</h3>
-                        <p>+91 9303794941</p>
-                    </div>
-                </div>
-
-                <div class="info-box">
-                    <i class="fas fa-envelope"></i>
-                    <div>
-                        <h3>Email</h3>
-                        <p>infotech.webdeveloper9926@gmail.com</p>
-                    </div>
-                </div>
-
-                <div class="info-box">
-                    <i class="fas fa-location-dot"></i>
-                    <div>
-                        <h3>Location</h3>
-                        <p>Indore, Madhya Pradesh, India</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <form class="contact-form"
-                  action="https://formsubmit.co/infotech.webdeveloper9926@gmail.com"
-                  method="POST">
-
-                <input type="text" name="name" placeholder="Your Name" required>
-
-                <input type="email" name="email" placeholder="Your Email" required>
-
-                <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_subject" value="New Website Inquiry">
-                <input type="hidden" name="_next" value="https://prafulpargi4-lgtm.github.io/infotech/">
-
-                <button type="submit" class="btn btn-primary">
-                    <i class="fas fa-paper-plane"></i>
-                    Send Message
-                </button>
-
-            </form>
-
-        </div>
-
-    </div>
-
-</section>
-<!-- FOOTER -->
-
-<footer>
-
-    <div class="container footer-container">
-
-        <div class="footer-logo">
-            <img src="assets/logo.png" alt="INFOTECH Logo">
-            <h2>INFOTECH</h2>
-        </div>
-
-        <p>
-            Website Development • Software Development • Mobile Apps • Digital Marketing
-        </p>
-
-        <div class="social-icons">
-
-            <a href="https://www.instagram.com/infotech1t" target="_blank">
-                <i class="fab fa-instagram"></i>
-            </a>
-
-            <a href="https://wa.me/919303794941" target="_blank">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-
-            <a href="mailto:infotech.webdeveloper9926@gmail.com">
-                <i class="fas fa-envelope"></i>
-            </a>
-
-        </div>
-
-        <p class="copyright">
-            © 2026 INFOTECH. All Rights Reserved.
-        </p>
-
-    </div>
-
-</footer>
-
-<!-- FLOATING BUTTONS -->
-
-<a href="https://wa.me/919303794941"
-   class="whatsapp"
-   target="_blank">
-    <i class="fab fa-whatsapp"></i>
-</a>
-
-<a href="tel:+919303794941"
-   class="call-btn">
-    <i class="fas fa-phone"></i>
-</a>
-
-<script src="script.js"></script>
-
+      </div>
+      <div class="container client-strip"><span>Built for teams with big ideas</span><div><b>STARTUPS</b><b>RETAIL</b><b>HEALTHCARE</b><b>EDUCATION</b><b>ENTERPRISE</b></div></div>
+    </section>
+
+    <section class="section intro" id="about"><div class="container intro-grid"><p class="section-label">01 / ABOUT INFOTECH</p><div><h2>Clear thinking. Strong execution. <span>Meaningful results.</span></h2><p>Based in Indore, INFOTECH is a creative technology company helping ambitious brands turn ideas into useful digital products. From the first conversation to launch day, we work as an extension of your team.</p><a class="text-link dark" href="#contact">Meet the team <i class="fa-solid fa-arrow-right"></i></a></div></div></section>
+
+    <section class="section services" id="services"><div class="container"><div class="section-heading"><p class="section-label">02 / WHAT WE DO</p><h2>Everything you need to<br />show up <span>brilliantly online.</span></h2></div><div class="service-grid">
+      <article class="service-card featured-service"><span class="service-number">01</span><i class="fa-solid fa-laptop-code"></i><h3>Web Development</h3><p>Fast, responsive websites that make a confident first impression and turn visitors into enquiries.</p><a href="#contact" aria-label="Discuss web development"><i class="fa-solid fa-arrow-up-right"></i></a></article>
+      <article class="service-card"><span class="service-number">02</span><i class="fa-solid fa-cubes"></i><h3>Custom Software</h3><p>Practical systems and dashboards built around the way your business actually works.</p><a href="#contact" aria-label="Discuss software development"><i class="fa-solid fa-arrow-up-right"></i></a></article>
+      <article class="service-card"><span class="service-number">03</span><i class="fa-solid fa-mobile-screen-button"></i><h3>Mobile Apps</h3><p>Intuitive mobile experiences that keep your business close to your customers.</p><a href="#contact" aria-label="Discuss mobile app development"><i class="fa-solid fa-arrow-up-right"></i></a></article>
+      <article class="service-card"><span class="service-number">04</span><i class="fa-solid fa-bullseye"></i><h3>Digital Growth</h3><p>SEO and marketing foundations that bring the right people to your business.</p><a href="#contact" aria-label="Discuss digital marketing"><i class="fa-solid fa-arrow-up-right"></i></a></article>
+    </div></div></section>
+
+    <section class="section work" id="work"><div class="container"><div class="work-top"><div><p class="section-label">03 / SELECTED WORK</p><h2>Designed to make an<br /><span>impact.</span></h2></div><a class="button button-light" href="#contact">See what we can build <i class="fa-solid fa-arrow-right"></i></a></div><div class="work-grid"><article class="project project-large"><div class="project-visual retail"><div class="product-card"><small>THE DAILY EDIT</small><b>Essentials for every day.</b><span>Shop collection →</span></div></div><div class="project-meta"><div><h3>Retail commerce platform</h3><p>Website design & development</p></div><span>01</span></div></article><article class="project"><div class="project-visual finance"><div class="finance-panel"><small>Business made simple</small><strong>₹ 4,28,500</strong><div><i></i><i></i><i></i><i></i><i></i></div></div></div><div class="project-meta"><div><h3>Finance management portal</h3><p>Product design & software</p></div><span>02</span></div></article></div></div></section>
+
+    <section class="section outcomes"><div class="container outcomes-grid"><div><p class="section-label">04 / WHY INFOTECH</p><h2>Good work should<br />feel <span>easy.</span></h2><p class="outcome-copy">A smooth process, clear communication and a team that stays invested after launch.</p></div><div class="outcome-list"><div><span>01</span><h3>Business-first approach</h3><p>Every decision starts with your goals, not a template.</p></div><div><span>02</span><h3>Made for every screen</h3><p>Beautifully considered experiences on mobile, tablet and desktop.</p></div><div><span>03</span><h3>Reliable support</h3><p>Clear updates and ongoing help when you need it.</p></div></div></div></section>
+
+    <section class="together"><div class="container together-wrap"><div><p class="section-label">READY WHEN YOU ARE</p><h2>Let's work <span>together.</span></h2><p>From a simple website refresh to a full digital product, we bring the right people and ideas to the table.</p></div><a class="button button-primary" href="#contact">Start your project <i class="fa-solid fa-arrow-right"></i></a></div></section>
+    <section class="section reviews"><div class="container"><div class="section-heading review-heading"><div><p class="section-label">05 / CLIENT REVIEWS</p><h2>Loved by teams we<br /><span>work with.</span></h2></div><div class="review-score"><strong>4.9</strong><span>★★★★★</span><small>Average client rating</small></div></div><div class="review-grid"><article><div class="quote">“</div><p>INFOTECH understood our requirements quickly and delivered a website that feels truly professional. The process was smooth from start to finish.</p><div class="reviewer"><span class="review-avatar orange">RS</span><div><b>Rahul Sharma</b><small>Business Owner</small></div></div></article><article><div class="quote">“</div><p>Our new website is clean, fast and easy for customers to use. Their team was responsive and gave us great ideas along the way.</p><div class="reviewer"><span class="review-avatar purple">PV</span><div><b>Priya Verma</b><small>Startup Founder</small></div></div></article><article><div class="quote">“</div><p>Excellent design quality and dependable support. We are already planning the next phase of our project with INFOTECH.</p><div class="reviewer"><span class="review-avatar green">AP</span><div><b>Amit Patel</b><small>E-commerce Owner</small></div></div></article></div></div></section>
+    <section class="section faq" id="faq"><div class="container faq-grid"><div><p class="section-label">06 / FAQ</p><h2>Questions,<br /><span>answered.</span></h2><p>Still have something in mind? Send us a message and we will be happy to help.</p><a class="text-link dark" href="#contact">Talk to our team <i class="fa-solid fa-arrow-right"></i></a></div><div class="faq-list"><details open><summary>How long does a website project take?<i class="fa-solid fa-plus"></i></summary><p>Most business websites take around 2–4 weeks, depending on the number of pages, features and how quickly content is finalised.</p></details><details><summary>Will my website work well on mobile phones?<i class="fa-solid fa-plus"></i></summary><p>Yes. Every project is designed mobile-first and tested across phones, tablets and desktop screens before launch.</p></details><details><summary>Can you help after the website goes live?<i class="fa-solid fa-plus"></i></summary><p>Absolutely. We offer ongoing support, updates, SEO support and feature improvements to keep your site working at its best.</p></details><details><summary>Do you work with businesses outside Indore?<i class="fa-solid fa-plus"></i></summary><p>Yes. We work remotely with businesses across India and keep every step clear through calls, messages and regular updates.</p></details></div></div></section>
+
+    <section class="contact-section" id="contact"><div class="container contact-card"><div><p class="section-label">05 / START A CONVERSATION</p><h2>Have a project<br />in <span>mind?</span></h2><p>Tell us a little about it. We will get back to you within one working day.</p><div class="contact-details"><a href="tel:+919303794941"><i class="fa-solid fa-phone"></i> +91 9303794941</a><a href="mailto:infotech.webdeveloper9926@gmail.com"><i class="fa-solid fa-envelope"></i> infotech.webdeveloper9926@gmail.com</a></div></div><form action="https://formsubmit.co/infotech.webdeveloper9926@gmail.com" method="POST"><label>Your name<input name="name" required placeholder="Enter your name" /></label><label>Email address<input name="email" type="email" required placeholder="you@company.com" /></label><label>Tell us about your project<textarea name="message" required rows="4" placeholder="A few details are enough to get started."></textarea></label><input type="hidden" name="_captcha" value="false" /><button class="button button-primary" type="submit">Send enquiry <i class="fa-solid fa-arrow-right"></i></button></form></div></section>
+  </main>
+  <footer><div class="container footer-wrap"><a class="brand" href="#top"><span class="brand-mark">i</span><span>INFOTECH</span></a><p>Digital solutions with purpose.</p><div><a href="https://www.instagram.com/infotech1t" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="https://wa.me/919303794941" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a><a href="mailto:infotech.webdeveloper9926@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></div><small>© 2026 INFOTECH. All rights reserved.</small></div></footer>
+  <a class="quick-whatsapp" href="https://wa.me/919303794941" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i><span>Chat with us</span></a>
+  <script src="script.js"></script>
 </body>
 </html>
